@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string("origin_city");
             $table->string("destination_city");
-            $table->string("return_date");
-            $table->string("price");
+            $table->dateTime("return_date");
+            $table->decimal("price", 10, 2);
             $table->string("airline");
-            $table->string("number_scales");
+            $table->smallInteger("number_scales");
             $table->string("flight_duration");
             $table->foreignId("user_id");
 

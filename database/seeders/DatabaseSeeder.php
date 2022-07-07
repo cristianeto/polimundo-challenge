@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Database\Factories\TicketFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,5 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(UserSeeder::class);
+        $this->call(TicketSeeder::class);
     }
 }
