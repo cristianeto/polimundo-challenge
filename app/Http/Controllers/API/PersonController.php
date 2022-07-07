@@ -12,4 +12,9 @@ class PersonController extends Controller
     {
         return response()->json(User::all(), 200);
     }
+
+    public function show(User $person)
+    {
+        return response()->json(User::find($person->id), 200);
+    }
 }
