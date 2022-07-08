@@ -12,4 +12,9 @@ class TicketController extends Controller
     {
         return response()->json(Ticket::all(), 200);
     }
+
+    public function show(Ticket $ticket)
+    {
+        return response()->json($ticket, 200);
+    }
 }

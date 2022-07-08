@@ -9,3 +9,4 @@ Route::get("/persons", [PersonController::class, 'index'])->name("persons.index"
 Route::get("/persons/{person}", [PersonController::class, 'show'])->name("persons.show");
 
 Route::get("/tickets", [TicketController::class, 'index'])->name("tickets.index");
+Route::get("/tickets/{ticket}", [TicketController::class, 'show'])->name("tickets.show");
