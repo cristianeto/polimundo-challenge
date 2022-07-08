@@ -10,3 +10,13 @@
 
 4. If everything was well you can run the TESTS `./vendor/bin/sail artisan test`
 
+## API's
+
+### Tickets
+
+- `http://localhost/api/tickets`
+- `http://localhost/api/tickets/{id}`
+
+### Persons
+- `http://localhost/api/persons`
+- `http://localhost/api/persons/{id}`
